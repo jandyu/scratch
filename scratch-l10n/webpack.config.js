@@ -7,6 +7,7 @@ module.exports = {
         rules: [{
             test: /\.js$/,
             include: path.resolve(__dirname, 'src'),
+            // include: path.resolve(__dirname, 'editor'),
             use: {
                 loader: 'babel-loader',
                 options: {

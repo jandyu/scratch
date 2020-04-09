@@ -4,6 +4,11 @@
 
 ###  scratch-gui    操作前端
 
+    /切换vm和l10n使用本地库
+    
+    npm link scratch-vm
+    npm link scratch-l10n
+    
     //启动
     npm start 
 
@@ -13,6 +18,7 @@
       cd Scratch3
       cd scratch-vm
       npm install
+      //本地库替换全局库
       npm link
       npm add uglifyjs-webpack-plugin
       //监听变化编译
@@ -22,3 +28,5 @@
 ### scratch-l10n，语言
   
     npm run build
+    //本地库替换全局库
+    npm link

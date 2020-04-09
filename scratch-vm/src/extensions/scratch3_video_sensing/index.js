@@ -548,8 +548,10 @@ class Scratch3VideoSensingBlocks {
      *   reference
      */
     whenMotionGreaterThan (args, util) {
+        console.info("begin whenMotionGreaterThan");
         this.detect.analyzeFrame();
         const state = this._analyzeLocalMotion(util.target);
+        console.info("return whenMotionGreaterThan");
         return state.motionAmount > Number(args.REFERENCE);
     }
 
